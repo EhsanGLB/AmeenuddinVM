@@ -11,7 +11,7 @@ $$ {\nu_{\infty}} = {0.005\over \rho} \left({ b_1 + b_2 Hct + b_3 Hct^2 }\right)
 
 $$ \lambda = 14.81 \left({ c_1 + c_2 Hct + c_3 Hct^2 }\right) $$
 
-$\nu$, $\gamma$, and $Hct$ are kinematic viscosity, strain rate, and hematocrit, respectively.
+Which $\nu$, $\dot{\gamma}$, and $Hct$ are kinematic viscosity, strain rate, and hematocrit, respectively.
 
 
 ## Installation
