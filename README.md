@@ -6,14 +6,13 @@ This is a library for Ameenuddin viscosity model written based on foam-extend-4.
 $$ {\nu} = \nu_{\infty} + \left({\nu_0 - \nu_{\infty}} \right) { {1 + ln \left({ 1 + \lambda \dot{\gamma} } \right) } \over { 1 + \lambda \dot{\gamma} } }$$
 
 $$ {\nu_0} = {0.0736 \over \rho} \left({ a_1 + a_2 Hct + a_3 Hct^2 }\right) $$
-  
-  dimensionedScalar nu0_ = 0.0736*(a1_ + a2_*hct_ + a3_*pow(hct_, 2))/rho_;
-    dimensionedScalar nuInf_ = 0.005*(b1_ + b2_*hct_ + b3_*pow(hct_, 2))/rho_;
-    dimensionedScalar lambda_ = 14.81*(c1_*hct_ + c2_*pow(hct_, 2));
 
-    \left({  }\right)
-$\nu$
-$$
+$$ {\nu_{\infty}} = {0.005\over \rho} \left({ b_1 + b_2 Hct + b_3 Hct^2 }\right) $$
+
+$$ \lambda = 14.81 \left({ c_1 + c_2 Hct + c_3 Hct^2 }\right) $$
+
+$\nu$, $\gamma$, and $Hct$ are kinematic viscosity, strain rate, and hematocrit, respectively.
+
 
 ## Installation
 It is working on foam-extend-4.1
