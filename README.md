@@ -3,7 +3,7 @@ This is a library for Ameenuddin viscosity model written based on foam-extend-4.
 
 
 ## Mathematical Relationships
-$$ {\nu} = \nu_{\infty} + \left({\nu_0 - \nu_{\infty}} \right) \left({ {1 + log \left({ 1 + \lambda \dot{\gamma} } \right) } \over { 1 + \lambda \dot{\gamma} }                }\right)$$
+$$ {\nu} = \nu_{\infty} + \left({\nu_0 - \nu_{\infty}} \right) { {1 + log \left({ 1 + \lambda \dot{\gamma} } \right) } \over { 1 + \lambda \dot{\gamma} } }$$
   
   
   dimensionedScalar nu0_ = 0.0736*(a1_ + a2_*hct_ + a3_*pow(hct_, 2))/rho_;
