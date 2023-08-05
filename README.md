@@ -3,7 +3,16 @@ This is a library for Ameenuddin viscosity model written based on foam-extend-4.
 
 
 ## Mathematical Relationships
+$$ {\mu} = \nu_{\infty} + \left({\nu_0 - \nu_{\infty}} \right) $$
+  
+  
+  dimensionedScalar nu0_ = 0.0736*(a1_ + a2_*hct_ + a3_*pow(hct_, 2))/rho_;
+    dimensionedScalar nuInf_ = 0.005*(b1_ + b2_*hct_ + b3_*pow(hct_, 2))/rho_;
+    dimensionedScalar lambda_ = 14.81*(c1_*hct_ + c2_*pow(hct_, 2));
 
+    return nuInf_ + (nu0_ - nuInf_) * ((1+log(1+lambda_*strainRate()))/(1+lambda_*strainRate()));
+
+  
 
 ## Installation
 It is working on foam-extend-4.1
